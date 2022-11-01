@@ -76,7 +76,7 @@ public class Calculator {
         }
         else {
             int1 = Integer.parseInt(equation.substring(0, equation.indexOf("*")));
-            int2 = Integer.parseInt(equation.substring(equation.indexOf("*")));
+            int2 = Integer.parseInt(equation.substring(equation.indexOf("*") + 1));
             answer = Integer.toString (int1 * int2);
             return answer;
         }
@@ -86,13 +86,42 @@ public class Calculator {
         if (equation.contains(".")) {
             dob1 = Double.parseDouble(equation.substring(0, equation.indexOf("/")));
             dob2 = Double.parseDouble(equation.substring(equation.indexOf("/") + 1));
-            answer = Double.toString(dob1 + dob2);
+            answer = Double.toString(dob1 / dob2);
             return answer;
         }
         else {
             int1 = Integer.parseInt(equation.substring(0, equation.indexOf("/")));
-            int2 = Integer.parseInt(equation.substring(equation.indexOf("/")));
-            answer = Integer.toString (int1 + int2);
+            int2 = Integer.parseInt(equation.substring(equation.indexOf("/") + 1));
+            answer = Integer.toString (int1 / int2);
+            return answer;
+        }
+    }
+
+    public String mod () {
+        if (equation.contains(".")) {
+            dob1 = Double.parseDouble(equation.substring(0, equation.indexOf("%")));
+            dob2 = Double.parseDouble(equation.substring(equation.indexOf("%") + 1));
+            answer = Double.toString(dob1 % dob2);
+            return answer;
+        }
+        else {
+            int1 = Integer.parseInt(equation.substring(0, equation.indexOf("%")));
+            int2 = Integer.parseInt(equation.substring(equation.indexOf("%") + 1));
+            answer = Integer.toString (int1 % int2);
+            return answer;
+        }
+    }
+
+    public String exponent () {
+        if (equation.contains(".")) {
+            dob1 = Double.parseDouble(equation.substring(0, equation.indexOf("^")));
+            dob2 = Double.parseDouble(equation.substring(equation.indexOf("^") + 1));
+            answer = Double.toString(Math.pow(dob1, dob2));
+            return answer;
+        } else {
+            int1 = Integer.parseInt(equation.substring(0, equation.indexOf("^")));
+            int2 = Integer.parseInt(equation.substring(equation.indexOf("^") + 1));
+            answer = Integer.toString((int) Math.pow(int1, int2));
             return answer;
         }
     }
