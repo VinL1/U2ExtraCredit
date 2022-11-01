@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf78f845-e355-4f42-b6ab-9b99fdb2718b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculator.java" afterDir="false" />
+    <list default="true" id="bf78f845-e355-4f42-b6ab-9b99fdb2718b" name="Changes" comment="spaced equations">
+      <change beforePath="$PROJECT_DIR$/src/CalculatorRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CalculatorRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +69,14 @@
       <option name="presentableId" value="Default" />
       <updated>1667259816964</updated>
     </task>
+    <task id="LOCAL-00001" summary="spaced equations">
+      <created>1667341377451</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667341377451</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -82,6 +89,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="spaced equations" />
+    <option name="LAST_COMMIT_MESSAGE" value="spaced equations" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
